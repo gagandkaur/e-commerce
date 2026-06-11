@@ -7,6 +7,7 @@ const currency = new Intl.NumberFormat("en-IN", {
 });
 
 export function ProductGrid({ products, onWishlistAdded, emptyMessage }) {
+  console.log("PRODUCTS ARRAY:", products);
   async function addToWishlist(productId) {
     try {
       await api.addWishlist({ productId });
