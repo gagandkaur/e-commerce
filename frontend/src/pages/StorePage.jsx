@@ -21,7 +21,7 @@ export function StorePage() {
 
   const categoriesQuery = useAsyncData(() => api.getCategories(), []);
   const productsQuery = useAsyncData(() => api.getProducts(filters), [queryKey]);
-
+  console.log("PRODUCTS DATA:", productsQuery.data);
   function handleSubmit(event) {
     event.preventDefault();
     setFilters({
