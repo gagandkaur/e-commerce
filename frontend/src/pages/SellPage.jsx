@@ -26,7 +26,7 @@ export function SellPage() {
       });
 
       setNotice({ message: `Listing created: ${result.product.title}`, tone: "success" });
-      event.currentTarget.reset();
+     // event.currentTarget.reset();
     } catch (error) {
       setNotice({ message: error.message, tone: "error" });
     }
